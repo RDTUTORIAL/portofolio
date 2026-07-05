@@ -58,7 +58,7 @@ const UNIQUE_PROJECTS = [
         front: '/textures/gallery/iragacoffe.webp',
         painted: '/textures/gallery/iragacoffe_painted.webp',
         url: 'https://www.iragacoffee.com/',
-        description: 'An e-commerce and brand website for Iraga Coffee built with Laravel, PHP, React & Tailwind, featuring premium coffee products and their brand story.',
+        description: 'A coffee brand platform for Iraga Coffee built with Laravel, React & Tailwind, combining public brand pages, product showcases, blog content, membership accounts, and an admin loyalty scanner for customer stamps and rewards.',
         techStack: ['/textures/gallery/laravel.webp', '/textures/gallery/phplogo.webp', '/textures/gallery/reactlogo.webp', '/textures/gallery/tailwindlogo.webp']
     },
     {
@@ -136,12 +136,12 @@ const UNIQUE_PROJECTS = [
     },
     {
         id: 'mahaputra',
-        title: 'Mahaputra Sejahtra',
+        title: 'Mahaputra Sejahtera',
         front: '/textures/gallery/mahaputra.png',
         painted: '/textures/gallery/mahaputra_painted.png',
         url: '#',
-        description: 'An administrative management system for Mahaputra Sejahtra built with PHP, React & Tailwind, handling business operations and company data management.',
-        techStack: ['/textures/gallery/phplogo.webp', '/textures/gallery/reactlogo.webp', '/textures/gallery/tailwindlogo.webp']
+        description: 'An internal admin suite for Mahaputra Sejahtera built with Laravel, React & Tailwind, covering staff records, payroll, kasbon, bonus, training, task tracking, project updates, purchasing, suppliers, inventory, assets, and multi-unit business operations.',
+        techStack: ['/textures/gallery/laravel.webp', '/textures/gallery/phplogo.webp', '/textures/gallery/reactlogo.webp', '/textures/gallery/tailwindlogo.webp']
     },
     {
         id: 'managementprint',
