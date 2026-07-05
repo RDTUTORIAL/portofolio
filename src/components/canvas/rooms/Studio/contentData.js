@@ -138,8 +138,8 @@ const RAW_CONTENT_DATA = [
     },
 ];
 
-const webTextures = ['/textures/studio/monitorfront_postnafbdoublewinner.webp'];
-const webPaintedTextures = ['/textures/studio/monitorfront_postnafbdoublewinner_painted.webp'];
+const webTextures = ['/textures/studio/monitorfront_kivora.webp'];
+const webPaintedTextures = ['/textures/studio/monitorfront_kivora_painted.webp'];
 const aiTextures = ['/textures/studio/tvfront_filmikprojektdlamultiego.webp', '/textures/studio/tvfront_filmikedytowaniezdjec.webp'];
 const aiPaintedTextures = ['/textures/studio/tvfront_filmikprojektdlamultiego_painted.webp', '/textures/studio/tvfront_filmikedytowaniezdjec_painted.webp'];
 const iotTextures = ['/textures/studio/phonefront_followmeontiktok.webp'];

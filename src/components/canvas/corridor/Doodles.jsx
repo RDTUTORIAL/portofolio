@@ -74,7 +74,7 @@ const Doodles = () => {
         paperAirplane: '/textures/corridor/decorations/paper_airplane.webp',
         pencil: '/textures/corridor/decorations/pencil.webp',
         coffeeCup: '/textures/corridor/decorations/coffee_cup.webp',
-        coffeeSteam: '/textures/corridor/asap.png',
+        coffeeSteam: '/textures/corridor/asap.webp',
     });
 
     Object.values(textures).forEach((tex) => {

@@ -42,7 +42,6 @@ export const CORRIDOR_TEXTURES = [
     '/textures/corridor/texturadoprogow.webp',
     '/textures/corridor/texturadrewnadonozekbiurka.webp',
     '/textures/corridor/ceiling_texture.webp',
-    '/textures/corridor/avatar_sketch.webp',
     // Double doors (end of corridor)
     '/textures/corridor/doors/frame_sketch.webp',
     '/textures/corridor/doors/doorrleft.webp',
@@ -72,7 +71,7 @@ export const CORRIDOR_TEXTURES = [
     '/textures/corridor/decorations/paper_airplane.webp',
     '/textures/corridor/decorations/pencil.webp',
     '/textures/corridor/decorations/coffee_cup.webp',
-    '/textures/corridor/asap.png',
+    '/textures/corridor/asap.webp',
     // CorridorDecorations - frames, furniture, lamps
     '/textures/corridor/ramkanazdjecieduza.webp',
     '/textures/corridor/ramkanazdjecieduza_painted.webp',
@@ -96,8 +95,6 @@ export const CORRIDOR_TEXTURES = [
 
 // Standard HTML Image assets (preloaded via new Image() in App.jsx)
 export const IMAGE_ASSETS = [
-    '/images/avatar-thinking.webp',
-    '/images/avatar-hero.webp',
     '/images/ink-splash.webp',
     '/images/map.webp',
     '/images/map_about_painted.webp',
@@ -304,8 +301,8 @@ export const STUDIO_TEXTURES = [
     '/textures/studio/phone_side.webp',
     '/textures/studio/phone_side_painted.webp',
     // Custom content front textures
-    '/textures/studio/monitorfront_postnafbdoublewinner.webp',
-    '/textures/studio/monitorfront_postnafbdoublewinner_painted.webp',
+    '/textures/studio/monitorfront_kivora.webp',
+    '/textures/studio/monitorfront_kivora_painted.webp',
     '/textures/studio/phonefront_followmeontiktok.webp',
     '/textures/studio/phonefront_followmeontiktok_painted.webp',
     '/textures/studio/tvfront_filmikedytowaniezdjec.webp',

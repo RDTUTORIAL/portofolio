@@ -461,7 +461,7 @@ const CorridorDecorations = ({ segmentLength, zOffset, corridorWidth = 4, corrid
     const grateTexture = useTexture('/textures/corridor/kratkawentylacyjna.webp');
     const flowerTexture = useTexture('/textures/corridor/kwiatekwdoniczce.webp');
     const coffeeTexture = useTexture('/textures/corridor/decorations/coffee_cup.webp');
-    const coffeeSteamTexture = useTexture('/textures/corridor/asap.png');
+    const coffeeSteamTexture = useTexture('/textures/corridor/asap.webp');
 
     useMemo(() => {
         coffeeTexture.colorSpace = THREE.SRGBColorSpace;
