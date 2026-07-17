@@ -13,8 +13,14 @@ export const ENTRANCE_TEXTURES = [
     '/textures/doors/door_right_sketch.webp',
     '/textures/doors/handle_left_sketch.webp',
     '/textures/doors/handle_right_sketch.webp',
+    '/textures/doors/door_left_painted.webp',
+    '/textures/doors/door_right_painted.webp',
+    '/textures/doors/handle_left_painted.webp',
+    '/textures/doors/handle_right_painted.webp',
     '/textures/doors/door_back_left_sketch.webp',
+    '/textures/doors/door_back.webp',
     '/textures/doors/pien.webp',
+    '/textures/doors/pien_sketch.webp',
     // Environment
     '/textures/entrance/wall_bricks_2.webp',
     '/textures/entrance/stone-path.webp',
@@ -54,11 +60,11 @@ export const CORRIDOR_TEXTURES = [
     '/textures/corridor/doors/klamkadodrzwi.webp',
     '/textures/corridor/doors/backsingledoors.webp',
     '/textures/corridor/doors/drzwiprojekty.webp',
-    '/textures/corridor/doors/drzwisocial.webp',
+    '/textures/corridor/doors/doorstudio.webp',
     '/textures/corridor/doors/drzwiabout.webp',
     '/textures/corridor/doors/drzwikontakt.webp',
     '/textures/corridor/doors/drzwiprojekty_painted.webp',
-    '/textures/corridor/doors/drzwisocial_painted.webp',
+    '/textures/corridor/doors/doorstudio_painted.webp',
     '/textures/corridor/doors/drzwiabout_painted.webp',
     '/textures/corridor/doors/drzwikontakt_painted.webp',
     // Signs
@@ -86,7 +92,10 @@ export const CORRIDOR_TEXTURES = [
     '/textures/corridor/szafkaprzodgora.webp',
     '/textures/corridor/rysuneknaobraz1.webp',
     '/textures/corridor/rysuneknaobrazek3.webp',
-    '/textures/corridor/private_drafts_note.svg',
+    '/textures/corridor/404_frame.webp',
+    '/textures/corridor/found_frame.webp',
+    '/textures/corridor/private_drafts_frame.webp',
+    '/textures/corridor/private_drafts_frame_painted.webp',
     // DoorSection extras
     '/textures/corridor/strzalka.webp',
     '/textures/corridor/doors/door_back.webp',
@@ -131,15 +140,10 @@ export const GALLERY_TEXTURES_BASE = [
     '/textures/gallery/miastotlo.webp',
     '/textures/gallery/bird_gray.webp',
     '/textures/gallery/klamerka.webp',
-    '/textures/gallery/openliveproject.webp',
 ];
 
 export const GALLERY_TEXTURES_VERSIONED = [
     // Project cards
-    'monetuneprzod',
-    'timberkittyprzod',
-    'youngmultiprzod',
-    'bioprzod',
     'eastlandbalitour',
     'intimassurya',
     'iragacoffe',
@@ -151,7 +155,6 @@ export const GALLERY_TEXTURES_VERSIONED = [
     'blackbaliparedise',
     'clinico',
     'kostmanager',
-    'balilivingrealestate',
     // Card back
     'tylkartki',
     'przyciskdotylukartki',
@@ -182,12 +185,6 @@ export const GALLERY_TEXTURES_SINGLE = [
     '/textures/gallery/laravel.webp',
     '/textures/gallery/psql.webp',
     '/textures/gallery/nextjs.webp',
-    '/textures/gallery/firebase.webp',
-    '/textures/gallery/php.webp',
-    '/textures/gallery/react.webp',
-    '/textures/gallery/tailwind.webp',
-    '/textures/gallery/wordpress.webp',
-    '/textures/gallery/elementor.webp',
 ];
 
 export const GALLERY_TEXTURES = [
@@ -216,46 +213,24 @@ export const CONTACT_TEXTURES = [
 export const ABOUT_TEXTURES = [
     // Avatar
     '/textures/about/awatarnachmurce.webp',
-    // Awards
-    '/textures/about/SOTY.webp',
-    '/textures/about/SOTY_painted.webp',
-    '/textures/about/SOTD.webp',
-    '/textures/about/SOTD_painted.webp',
-    '/textures/about/SOTM.webp',
-    '/textures/about/SOTM_painted.webp',
+    // Milestone buttons
     '/textures/about/button.webp',
     '/textures/about/button_painted.webp',
-    // Award images (for overlay)
-    '/textures/about/SOTDAYYOUNGMULTICSSWINNER.webp',
-    '/textures/about/SOTDAYYOUNGMULTIGSAP.webp',
-    '/textures/about/SOTDAYYOUNGMULTIORPETRON.webp',
-    '/textures/about/SOTDAYYOUNGMULTIDESIGNNOMINESS.webp',
-    // Journey islands
-    '/textures/about/uowyspa.webp',
-    '/textures/about/freelancewyspa.webp',
-    // Skill balloons - large
-    '/textures/about/reactduzybalon.webp',
-    '/textures/about/reactduzybalon_painted.webp',
-    '/textures/about/threejsduzybalon.webp',
-    '/textures/about/threejsduzybalon_painted.webp',
-    '/textures/about/GSAPduzybalon.webp',
-    '/textures/about/GSAPduzybalon_painted.webp',
-    // Skill balloons - medium
-    '/textures/about/JSSREDNIBALON.webp',
-    '/textures/about/JSSREDNIBALON_painted.webp',
-    '/textures/about/csssrednibalon.webp',
-    '/textures/about/csssrednibalon_painted.webp',
-    '/textures/about/nextjssrednibalon.webp',
-    '/textures/about/nextjssrednibalon_painted.webp',
-    // Skill balloons - small
-    '/textures/about/htmlmalybalon.webp',
-    '/textures/about/htmlmalybalon_painted.webp',
-    '/textures/about/gitmalybalon.webp',
-    '/textures/about/gitmalybalon_painted.webp',
-    '/textures/about/figmamalybalon.webp',
-    '/textures/about/figmamalybalon_painted.webp',
-    '/textures/about/firebasemalybalon.webp',
-    '/textures/about/firebasemalybalon_painted.webp',
+    // Milestone gallery images
+    '/textures/about/img/iot-lksai-nasional.webp',
+    '/textures/about/img/iot.webp',
+    '/textures/about/img/lkskotaweb.webp',
+    '/textures/about/img/lkswebprov.webp',
+    '/textures/about/img/mahaputra.webp',
+    '/textures/about/img/iragacoffee.webp',
+    // Skill balloons
+    ...[
+        'react', 'js', 'ts', 'php', 'next', 'flutter', 'pytorch', 'laravel',
+        'cpp', 'python', 'psql', 'git', 'figma', 'firebase', 'docker', 'iot'
+    ].flatMap(name => [
+        `/textures/about/${name}.webp`,
+        `/textures/about/${name}_painted.webp`,
+    ]),
     // Clouds
     '/textures/clouds/1131c3eb-dfae-423f-924b-ff39d8ccd6dc.webp',
     '/textures/clouds/254b8ec8-d6f7-4275-956f-7bab65b2ce2d.webp',
@@ -303,12 +278,20 @@ export const STUDIO_TEXTURES = [
     // Custom content front textures
     '/textures/studio/monitorfront_kivora.webp',
     '/textures/studio/monitorfront_kivora_painted.webp',
-    '/textures/studio/phonefront_followmeontiktok.webp',
-    '/textures/studio/phonefront_followmeontiktok_painted.webp',
-    '/textures/studio/tvfront_filmikedytowaniezdjec.webp',
-    '/textures/studio/tvfront_filmikedytowaniezdjec_painted.webp',
-    '/textures/studio/tvfront_filmikprojektdlamultiego.webp',
-    '/textures/studio/tvfront_filmikprojektdlamultiego_painted.webp',
+    '/textures/studio/monitorfront_cdn.webp',
+    '/textures/studio/monitorfront_cdn_painted.webp',
+    '/textures/studio/monitorfront_intimasscan.webp',
+    '/textures/studio/monitorfront_intimasscan_painted.webp',
+    '/textures/studio/tvfront_dllencrypt.webp',
+    '/textures/studio/tvfront_dllencrypt_painted.webp',
+    '/textures/studio/tvfront_eduscan.webp',
+    '/textures/studio/tvfront_eduscan_painted.webp',
+    '/textures/studio/tvfront_aetherion.webp',
+    '/textures/studio/tvfront_aetherion_painted.webp',
+    '/textures/studio/phonefront_ghostusb.webp',
+    '/textures/studio/phonefront_ghostusb_painted.webp',
+    '/textures/studio/phonefront_ayobuatpenjor.webp',
+    '/textures/studio/phonefront_ayobuatpenjor_painted.webp',
 ];
 
 // ============================================
@@ -340,26 +323,17 @@ export const PRELOAD_LOADER = [
  * @returns {string[]} The filtered list
  */
 export const filterTexturesByDevice = (list, usePainted) => {
-    // 1. Identify all paths that have a _painted version available
-    const paintedVersions = new Set(list.filter(p => p.includes('_painted.webp')));
-    
     // Also include the special css3logo case
     const hasCss3Painted = list.some(p => p.includes('css3logo_painted.webp'));
     
     return list.filter(path => {
         const isPainted = path.includes('_painted.webp');
-        const isCss3 = path.includes('css3logo_painted.webp');
-        
-        // Find the "standard" version for this path if it's a painted one
-        let standardVersion = null;
+
         if (isPainted) {
-            standardVersion = path.replace('_painted.webp', '.webp');
-        } else if (isCss3) {
-            standardVersion = path.replace('css3logo_painted.webp', 'csslogo.webp');
+            return usePainted;
         } else {
             // Check if this standard path HAS a painted version in the list
             const pVersion = path.replace('.webp', '_painted.webp');
-            const css3Version = path.replace('csslogo.webp', 'css3logo_painted.webp');
             if (list.includes(pVersion) || (path.includes('csslogo.webp') && hasCss3Painted)) {
                 // Return true to keep the standard version! Both desktop and mobile need it.
                 return true; 
@@ -368,7 +342,5 @@ export const filterTexturesByDevice = (list, usePainted) => {
             return true;
         }
 
-        // It's a painted version
-        return usePainted;
     });
 };

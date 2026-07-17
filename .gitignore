@@ -1,5 +1,5 @@
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -7,21 +7,46 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+node_modules/
+dist/
+dist-ssr/
 *.local
 
-.agent
+# Local AI assistants, skills, and generated plans
+.agent/
+.agents/
+.claude/
+.codex/
+.cursor/
+.gemini/
+.superpowers/
+.windsurf/
+.continue/
+.aider*
+/docs/superpowers/
 
-.claude
-
-.github
+# Local audits, captures, and raw working assets
+/tmp/
+/img/
+/localhost_*.html
+**/backups/
+*.tmp
+*.bak
+*.orig
 
 # dotenv environment variables file
 .env
 .env.*
 !.env.example
+
+# Tool and deployment caches
+.cache/
+.eslintcache
+.vite/
+.vercel/
+.netlify/
+coverage/
+*.tsbuildinfo
 
 # Editor directories and files
 .vscode/*

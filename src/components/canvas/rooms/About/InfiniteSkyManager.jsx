@@ -457,15 +457,7 @@ const SkillBalloon = ({ config, revealFactorRef, spreadFactorRef, timeRef }) => 
         }
     };
 
-    const legacyAspects = {
-        'reactduzybalon.webp': 736 / 1447,
-        'threejsduzybalon.webp': 1141 / 1964,
-        'GSAPduzybalon.webp': 1.0,
-        'default_small_medium': 1.0
-    };
-
-    const filename = config.texture.split('/').pop();
-    const aspect = legacyAspects[filename] || legacyAspects.default_small_medium;
+    const aspect = 1;
     const baseHeight = SIZE_MULTIPLIERS[config.size];
     const outerGroupRef = useRef();
     const innerGroupRef = useRef();

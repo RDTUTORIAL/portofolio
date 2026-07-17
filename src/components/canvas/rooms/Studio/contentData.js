@@ -138,31 +138,7 @@ const RAW_CONTENT_DATA = [
     },
 ];
 
-const webTextures = ['/textures/studio/monitorfront_kivora.webp'];
-const webPaintedTextures = ['/textures/studio/monitorfront_kivora_painted.webp'];
-const aiTextures = ['/textures/studio/tvfront_filmikprojektdlamultiego.webp', '/textures/studio/tvfront_filmikedytowaniezdjec.webp'];
-const aiPaintedTextures = ['/textures/studio/tvfront_filmikprojektdlamultiego_painted.webp', '/textures/studio/tvfront_filmikedytowaniezdjec_painted.webp'];
-const iotTextures = ['/textures/studio/phonefront_followmeontiktok.webp'];
-const iotPaintedTextures = ['/textures/studio/phonefront_followmeontiktok_painted.webp'];
-
-let webIdx = 0, aiIdx = 0, iotIdx = 0;
-let webPIdx = 0, aiPIdx = 0, iotPIdx = 0;
-
-export const CONTENT_DATA = RAW_CONTENT_DATA.map((item) => {
-    return {
-        ...item,
-        frontTexture: item.frontTexture || (
-            item.platform === 'web' ? webTextures[webIdx++ % webTextures.length] :
-                item.platform === 'ai_cyber' ? aiTextures[aiIdx++ % aiTextures.length] :
-                    iotTextures[iotIdx++ % iotTextures.length]
-        ),
-        paintedFrontTexture: item.paintedFrontTexture || (
-            item.platform === 'web' ? webPaintedTextures[webPIdx++ % webPaintedTextures.length] :
-                item.platform === 'ai_cyber' ? aiPaintedTextures[aiPIdx++ % aiPaintedTextures.length] :
-                    iotPaintedTextures[iotPIdx++ % iotPaintedTextures.length]
-        )
-    };
-});
+export const CONTENT_DATA = RAW_CONTENT_DATA;
 
 // Helper to get content by platform
 export const getContentByPlatform = (platform) => {
