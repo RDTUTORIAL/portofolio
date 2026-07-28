@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-28T10:55:00Z",
+  "title": "Design System: Danis Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "neutral",
+        "displayName": "Graphite Ink",
+        "canonical": "#17191d",
+        "tonalRamp": ["#111216", "#17191d", "#292c32", "#41464f", "#626974", "#8c949e", "#c3c8ce", "#f1f3f5"]
+      },
+      "muted-ink": {
+        "role": "neutral",
+        "displayName": "Muted Graphite",
+        "canonical": "#555b64",
+        "tonalRamp": ["#15171a", "#262a2f", "#3d4249", "#555b64", "#737b86", "#9da4ad", "#cbd0d5", "#f0f2f4"]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Cool Paper",
+        "canonical": "#f7f7f3",
+        "tonalRamp": ["#1d1f21", "#35383a", "#565a5d", "#7e8284", "#aaadad", "#d0d2d0", "#e9eae6", "#f7f7f3"]
+      },
+      "paper-raised": {
+        "role": "neutral",
+        "displayName": "Raised Paper",
+        "canonical": "#fcfcf8",
+        "tonalRamp": ["#1f2021", "#393a3a", "#5c5d5c", "#858684", "#b2b2af", "#d9d9d5", "#efefeb", "#fcfcf8"]
+      },
+      "graphite-line": {
+        "role": "neutral",
+        "displayName": "Pencil Line",
+        "canonical": "#a5adb8",
+        "tonalRamp": ["#18202a", "#293847", "#415366", "#5d7185", "#7f90a1", "#a5adb8", "#ced3da", "#f2f4f7"]
+      },
+      "blueprint": {
+        "role": "primary",
+        "displayName": "Blueprint Cobalt",
+        "canonical": "#315fbe",
+        "tonalRamp": ["#091932", "#102852", "#193b79", "#2450a0", "#315fbe", "#5681d5", "#8aaaf0", "#eef4ff"]
+      },
+      "blueprint-night": {
+        "role": "secondary",
+        "displayName": "Blueprint Night",
+        "canonical": "#0b1118",
+        "tonalRamp": ["#070b0f", "#0b1118", "#15212d", "#263746", "#44566a", "#718296", "#adb9c6", "#edf1f5"]
+      },
+      "blueprint-light": {
+        "role": "secondary",
+        "displayName": "Blueprint Light",
+        "canonical": "#82aaf7",
+        "tonalRamp": ["#0d1b34", "#172f5a", "#294985", "#4268b0", "#648bdc", "#82aaf7", "#b9d0ff", "#eef4ff"]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Signature Display",
+        "purpose": "The public name and one decisive identity statement."
+      },
+      "body": {
+        "displayName": "Sketch Body",
+        "purpose": "Readable profile copy and supporting text."
+      },
+      "label": {
+        "displayName": "Tactile Label",
+        "purpose": "Actions, destinations, and compact controls."
+      }
+    },
+    "shadows": [
+      {
+        "name": "floating-sheet",
+        "value": "10px 14px 26px rgb(34 49 67 / 18%), 0 30px 72px rgb(34 49 67 / 18%)",
+        "purpose": "Centers a narrow paper surface above the desktop stage."
+      },
+      {
+        "name": "pressed-action",
+        "value": "5px 7px 16px color-mix(in srgb, #315fbe 28%, transparent)",
+        "purpose": "Gives the primary mobile action physical response."
+      }
+    ],
+    "motion": [
+      {
+        "name": "paper-settle",
+        "value": "720ms cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Brings the waving character into place once without hiding it."
+      },
+      {
+        "name": "tactile-response",
+        "value": "180ms cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Handles hover, focus-adjacent, and pressed feedback."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile-compact",
+        "value": "359px"
+      },
+      {
+        "name": "narrow-surface",
+        "value": "600px"
+      },
+      {
+        "name": "system-collapse",
+        "value": "768px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Action",
+      "kind": "button",
+      "refersTo": "primary-action",
+      "description": "The single full-width action that opens the full portfolio.",
+      "html": "<a class=\"ds-primary-action\" href=\"#\">Explore portfolio <span aria-hidden=\"true\">↗</span></a>",
+      "css": ".ds-primary-action { display:flex; align-items:center; justify-content:space-between; min-height:56px; padding:14px 17px; border-radius:15px; background:#315fbe; color:#f8faff; font:700 17px/1 'Cabin Sketch',sans-serif; text-decoration:none; box-shadow:5px 7px 16px rgb(49 95 190 / 28%); transition:transform 180ms cubic-bezier(.16,1,.3,1),box-shadow 180ms cubic-bezier(.16,1,.3,1); } .ds-primary-action:hover { transform:translateY(-2px); } .ds-primary-action:focus-visible { outline:3px solid #214b9f; outline-offset:4px; } .ds-primary-action:active { transform:translateY(1px) scale(.985); box-shadow:3px 4px 10px rgb(49 95 190 / 24%); }"
+    },
+    {
+      "name": "Compact Share Control",
+      "kind": "button",
+      "refersTo": "compact-control",
+      "description": "A small utility control with persistent text feedback.",
+      "html": "<button class=\"ds-share\" type=\"button\">Share</button>",
+      "css": ".ds-share { min-width:96px; min-height:46px; padding:10px 15px; border:1px solid #555b64; border-radius:999px; background:#fcfcf8; color:#17191d; font:700 17px/1 'Cabin Sketch',sans-serif; transition:color 180ms cubic-bezier(.16,1,.3,1),background 180ms cubic-bezier(.16,1,.3,1),transform 180ms cubic-bezier(.16,1,.3,1); } .ds-share:hover { color:#315fbe; background:#eef3fb; } .ds-share:focus-visible { outline:3px solid #214b9f; outline-offset:4px; } .ds-share:active { transform:scale(.97); }"
+    },
+    {
+      "name": "Profile Link Row",
+      "kind": "nav",
+      "refersTo": "link-row",
+      "description": "A flat destination row with a factual handle and generous touch height.",
+      "html": "<a class=\"ds-link-row\" href=\"#\"><span><strong>GitHub</strong><small>@RDTUTORIAL</small></span><span aria-hidden=\"true\">↗</span></a>",
+      "css": ".ds-link-row { display:flex; min-height:70px; align-items:center; justify-content:space-between; gap:16px; padding:10px 3px; border-bottom:1px solid #a5adb8; color:#17191d; font:400 17px/1.2 'Cabin Sketch',sans-serif; text-decoration:none; transition:color 180ms cubic-bezier(.16,1,.3,1),padding 180ms cubic-bezier(.16,1,.3,1),transform 180ms cubic-bezier(.16,1,.3,1); } .ds-link-row span:first-child { display:flex; flex-direction:column; gap:2px; } .ds-link-row small { color:#555b64; font-size:15px; } .ds-link-row:hover { padding-left:7px; padding-right:7px; color:#315fbe; } .ds-link-row:focus-visible { outline:3px solid #214b9f; outline-offset:4px; } .ds-link-row:active { transform:scale(.985); }"
+    },
+    {
+      "name": "Mobile Paper Sheet",
+      "kind": "card",
+      "description": "The edge-to-edge mobile surface that becomes a narrow floating sheet on larger screens.",
+      "html": "<article class=\"ds-paper-sheet\"><h2>DANIS</h2><p>Creative Software Engineer</p></article>",
+      "css": ".ds-paper-sheet { width:min(100%,460px); min-height:520px; padding:20px; border-radius:28px; background:#f7f7f3; color:#17191d; box-shadow:10px 14px 26px rgb(34 49 67 / 18%),0 30px 72px rgb(34 49 67 / 18%); } .ds-paper-sheet h2 { margin:0; font:400 64px/.94 'Rubik Scribble',sans-serif; letter-spacing:-.025em; } .ds-paper-sheet p { font:700 22px/1.05 'Cabin Sketch',sans-serif; } @media(max-width:599px){ .ds-paper-sheet { width:100%; min-height:100dvh; border-radius:0; box-shadow:none; } }"
+    },
+    {
+      "name": "Skip Link",
+      "kind": "nav",
+      "description": "A keyboard-only shortcut that becomes visible on focus.",
+      "html": "<a class=\"ds-skip-link\" href=\"#links\">Skip to profile links</a>",
+      "css": ".ds-skip-link { display:inline-block; padding:10px 14px; border-radius:10px; background:#17191d; color:#f7f7f3; font:700 16px/1 'Cabin Sketch',sans-serif; text-decoration:none; transform:translateY(-160%); transition:transform 180ms cubic-bezier(.16,1,.3,1); } .ds-skip-link:focus { transform:translateY(0); outline:3px solid #214b9f; outline-offset:4px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Living Sketchbook",
+    "overview": "The interface feels like Danis' drawings have become a navigable place. Paper texture, imperfect ink lines, local sketch lettering, and illustrated characters carry the identity. Digital controls remain obvious and responsive, but their physical press and offset depth make them belong to the same world.\n\nThe main portfolio can use spatial WebGL, while lightweight surfaces preserve the same personality through real artwork and tactile CSS. Expression is concentrated in one memorable illustrated moment. Information, actions, and accessibility remain direct.",
+    "keyCharacteristics": [
+      "Real hand-drawn artwork leads the composition.",
+      "Paper and graphite form the neutral foundation.",
+      "Blueprint blue is the only chromatic accent.",
+      "Controls feel pressed, not glowing.",
+      "Motion welcomes or confirms; it does not decorate every element."
+    ],
+    "rules": [
+      {
+        "name": "The One-Ink Rule",
+        "body": "Blueprint is the only accent family. New semantic colors appear only for a real success or error state.",
+        "section": "colors"
+      },
+      {
+        "name": "The Paper Stays Paper Rule",
+        "body": "Texture supports the subject's physical world and never becomes a generic grain overlay.",
+        "section": "colors"
+      },
+      {
+        "name": "The Scribble Is a Signature Rule",
+        "body": "Rubik Scribble is reserved for identity-scale display text, never paragraphs or utility labels.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Elevation Signal Rule",
+        "body": "A component uses either a border or a shadow as its primary edge signal, not both.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do reuse real portfolio artwork and local fonts before inventing new visual assets.",
+      "Do keep primary actions visible in the first mobile viewport.",
+      "Do maintain 44px or larger touch targets and safe-area spacing.",
+      "Do support both paper-light and blueprint-dark themes.",
+      "Do keep copy factual and tied to portfolio evidence."
+    ],
+    "donts": [
+      "Don't turn the system into a generic glass card or neon technology theme.",
+      "Don't load WebGL, audio, custom cursors, or heavy texture preloads on lightweight routes.",
+      "Don't use equal icon-card grids as the default information structure.",
+      "Don't add unconfirmed contact details, metrics, clients, or availability claims.",
+      "Don't hide useful content based on user-agent detection."
+    ]
+  }
+}

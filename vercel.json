@@ -5,6 +5,14 @@
   "outputDirectory": "dist",
   "rewrites": [
     {
+      "source": "/card",
+      "destination": "/card/index.html"
+    },
+    {
+      "source": "/card/",
+      "destination": "/card/index.html"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }
